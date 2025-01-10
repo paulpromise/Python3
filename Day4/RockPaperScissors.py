@@ -31,7 +31,7 @@ scissors = '''
 print("Welcome to the rock, paper, and scissors game")
 user_response = input("What do you choose? Type 0 for rock, 1 for paper or 2 for scissors ")
 user_response = int(user_response)
-print(type(user_response))
+
 
 if user_response == 0:
     print(rock)
@@ -52,6 +52,20 @@ elif random_num == 1:
 else:
     print(scissors)
 
+if user_response == 0 and random_num == 1:
+    print("You loss!")
+elif user_response == 1 and random_num == 0:
+    print("You Won!")
+elif user_response == 2 and random_num == 1:
+    print("You Won!")
+elif user_response == 1 and random_num == 2:
+    print("You loss!")
+elif user_response == 2 and random == 0:
+    print("You loss")
+elif user_response == 0 and random_num == 2:
+    print("You Won!")
+elif user_response == random_num:
+    print("Is a draw.")
 
 
 
