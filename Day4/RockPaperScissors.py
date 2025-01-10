@@ -57,7 +57,7 @@ else:
 print("Computer Choice")
 computer_choice = random.randint(0, 2)
 
-game_image = [rock, paper, scissors]
+#game_image = [rock, paper, scissors]
 print(game_image[computer_choice])
 
 
