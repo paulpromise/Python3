@@ -47,6 +47,7 @@ else:
     print(scissors)
 
 #Generate random number between 0 and 2
+print("Computer Choice")
 random_num = random.randint(0, 2)
 
 if random_num == 0:
