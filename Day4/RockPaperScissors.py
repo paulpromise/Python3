@@ -33,7 +33,7 @@ print("Welcome to the rock, paper, and scissors game")
 user_response = input("What do you choose? Type 0 for rock, 1 for paper or 2 for scissors ")
 
 if not user_response.isdigit() or int(user_response) not in [0, 1, 2]:
-    print("Invalid input! Please enter a number (0, 1, or 2).")
+    print("Invalid input! Please enter a number (0, 1, or 2). ")
     sys.exit()
 else:
     user_response = int(user_response)
