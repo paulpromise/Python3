@@ -1,18 +1,21 @@
 
 student_hight = input("Enter the list of student hight ")
+#convert input data into list
 student_hight = student_hight.split()
 
-total_sum = 0
+
 
 for n in range(0, len(student_hight)):
     student_hight[n] = int(student_hight[n])
 
  #Using for loop to add items in list   
-for num in student_hight:
-    total_sum += num
-print(total_sum)
 
-Average_number = total_sum / len(student_hight)
+Total_height = 0
+for num in student_hight:
+    Total_height += num
+print(Total_height)
+
+Average_number = Total_height / len(student_hight)
 
 print(round(Average_number))
 
@@ -22,6 +25,7 @@ print(round(Average_number))
 
 
 """ 
+#Using for loop and the range function
 for n in range(0, student_lenght):
     student_hight[n] = int(student_hight[n])
 
