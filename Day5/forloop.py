@@ -22,9 +22,15 @@ for i in fruits:
 
 String = "Python"
 
-#for string in String:
-   # print(string)
-#print(String)
+word = ''
+for string in String:
+   word += string
 
+print(word)
+
+""" 
+numbers = ''
 for i in range(10):
-    print(i)
+    numbers += i 
+
+print(numbers) """

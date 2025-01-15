@@ -11,12 +11,12 @@ print(type(Student_score[n]))
 
 #print(max(Student_score))
 #print(min(Student_score))
-largest = Student_score[0]
+highest_score = 0
 
-for item in Student_score:
-    if item > largest:
-        largest = item
+for score in Student_score:
+    if score > highest_score:
+        highest_score = score
     
-print(largest)
+print(f"highest score in the class is {highest_score}")
 
 
