@@ -20,5 +20,19 @@ Password  = ''
 for passwd in all_gen_password:
     Password += passwd
 
-print(Password)
 
+#Convert Password into a list
+Password = list(Password)
+
+#Reshuffle the password int the list
+random.shuffle(Password)
+
+#create a new variable to store the Password
+New_Password = ""
+
+#Use loop to put all the password togather and print it out 
+for char in Password:
+    New_Password += char
+
+
+print(f"Your new password: {New_Password}")
