@@ -1,8 +1,12 @@
 import random
 
-listNames = ["Gifty", "Angela", "Thelma", "Angela"]
+listNames = ["Gifty", "Angela", "Joe", "Mclean"]
+print(listNames)
 totlname = len(listNames)
+randomchoice = random.choice(listNames)
+
+#print(randomchoice)
 
 RandomName = random.randint(1, totlname)
 
-print(RandomName)
+print(listNames[RandomName])

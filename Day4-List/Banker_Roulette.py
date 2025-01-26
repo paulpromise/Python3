@@ -25,9 +25,6 @@ print(f"{Random_User} is going to pay the bills")
 #Get the total number of items in the list
 Num_Items = len(Names)
 
-#Print the list 
-print(Num_Items)
-
 #Generate random numbers from the list items
 random_choice = random.randint(0, Num_Items - 1)
 
