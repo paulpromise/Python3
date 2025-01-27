@@ -21,11 +21,20 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 *******************************************************************************
 ''')
 
+
 print("""Welcome to Treasure Island!
 Your mission is to find the treasure.""")
 
 response = input('You\'re at a crossroad. Where do you want to go? Type "Left" or "Right": ').lower()
 #response = User_response.lower()
+
+
+# create a while loop to ask user to enter right or left if input is wrong
+
+while response != "right" and (response != "left"):
+        print("Invalid choice. Please type 'right' or 'left'")
+        response = input('You\'re at a crossroad. Where do you want to go? Type "Left" or "Right": ').lower()
+
 
 print()
 
@@ -33,9 +42,14 @@ if response == "right":
     print("You took the right path, but it leads to a dead end. Game Over!")
 
 elif response == "left":
-    response = input('You are at the edge of the water. Do you want to swim across or wait for the boat? Type "Swim" or "Wait": ')
+    response = input('You are at the edge of the water. Do you want to swim across or wait for the boat? Type "Swim" or "Wait": ').lower()
 
-    if (response.lower() == "swim"):
+    print()
+# create a while loop to ask user to enter wait or swim if input is wrong
+    while response != "swim" and response != "wait":
+        response = input("""You are at the edge of the water. Do you want to swim across or wait for the boat? Type "Swim" or "Wait": """)
+
+    if (response == "swim"):
         print("You chose to swim, but unfortunately, the waters are too dangerous. Game Over!")
 
     elif response == "wait":
@@ -56,8 +70,7 @@ elif response == "left":
 
     else:
         print("Invalid choice. Please type 'Swim' or 'Wait'.")
-else:
-    print("Invalid choice. Please type 'Right' or 'Left'. ")
+
 
 
 
